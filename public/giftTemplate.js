@@ -14,8 +14,10 @@ templates['giftTemplate'] = template({"compiler":[8,">= 4.3.0"],"main":function(
     + alias4(((helper = (helper = lookupProperty(helpers,"description") || (depth0 != null ? lookupProperty(depth0,"description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":6,"column":12},"end":{"line":6,"column":27}}}) : helper)))
     + "\n          </p>\n\n          <p class=\"gift-price\">\n            "
     + alias4(((helper = (helper = lookupProperty(helpers,"price") || (depth0 != null ? lookupProperty(depth0,"price") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":10,"column":12},"end":{"line":10,"column":21}}}) : helper)))
-    + "\n          </p>\n          \n          <p class=\"gift-rating\">\n              "
-    + alias4(((helper = (helper = lookupProperty(helpers,"rating") || (depth0 != null ? lookupProperty(depth0,"rating") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"rating","hash":{},"data":data,"loc":{"start":{"line":14,"column":14},"end":{"line":14,"column":24}}}) : helper)))
+    + "\n          </p>\n          \n          <p class=\"gift-rating\">\n            "
+    + alias4(((helper = (helper = lookupProperty(helpers,"rating") || (depth0 != null ? lookupProperty(depth0,"rating") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"rating","hash":{},"data":data,"loc":{"start":{"line":14,"column":12},"end":{"line":14,"column":22}}}) : helper)))
+    + "\n          </p>\n\n          <p class=\"tags\">\n            "
+    + alias4(((helper = (helper = lookupProperty(helpers,"tags") || (depth0 != null ? lookupProperty(depth0,"tags") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tags","hash":{},"data":data,"loc":{"start":{"line":18,"column":12},"end":{"line":18,"column":20}}}) : helper)))
     + "\n          </p>\n        </div>\n      </article>";
 },"useData":true});
 })();
