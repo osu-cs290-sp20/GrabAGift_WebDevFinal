@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js", 
+    "start": "node server.js",
     "build": "handlebars views/partials/giftTemplate.handlebars -f public/giftTemplate.js",
     "prestart": "npm run build"
   },
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/osu-cs290-sp20/final-project-group-1#readme",
   "dependencies": {
+    "ebay-node-api": "^2.8.6",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "handlebars": "^4.7.6"
