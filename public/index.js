@@ -5,7 +5,7 @@ function formSubmit(event) {
     var ageSlider = document.getElementById("age-slider");
     
     var maleGenderSelect = document.getElementById("q2-r1");
-    var femaleGenderSelect = document.getElementById("q2-r1");
+    var femaleGenderSelect = document.getElementById("q2-r2");
 
     var hobbiesInput = document.getElementById("hobbies-input");
     
