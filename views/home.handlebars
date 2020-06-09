@@ -1,7 +1,6 @@
 <script>
-    function display() {
-        var slider = getElementById("age-slider").value;
-        document.getElementById("age-displayer.value = slider; 
+    function updateDisplay(inputVal) {
+        document.getElementById("age-displayer").value=inputVal;
     }
 </script>
 
@@ -9,7 +8,7 @@
 Answer the following questions to determine what gifts are best for your occasion!
 
     <p>What is the age of the gift recipient?<br>
-        <input type="range" min="1" max="100" step="1" onchange="display()" id="age-slider"><br>
+        <input type="range" min="1" max="100" step="1" onchange="updateDisplay(this.value);" id="age-slider"><br>
         <input type="text" id="age-displayer"><br>
     </p>
 
