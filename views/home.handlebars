@@ -13,17 +13,17 @@
         </p>
 
         <p>What is the gender of the gift recipient?<br>
-            <input type="radio" name="question_2" value="answer_1">Male<br>
-            <input type="radio" name="question_2" value="answer_2">Female<br>
-            <input type="radio" name="question_2" value="answer_3">Non-binary<br>
-            <input type="radio" name="question_2" value="answer_4">Prefer not to answer<br>
+            <input type="radio" name="question_2" value="answer_1" id="q2-r1">Male<br>
+            <input type="radio" name="question_2" value="answer_2" id="q2-r2">Female<br>
+            <input type="radio" name="question_2" value="answer_3" id="q2-r3">Non-binary<br>
+            <input type="radio" name="question_2" value="answer_4" id="q2-r4">Prefer not to answer<br>
         </p>
 
         <p>What ocassion is the gift for?<br>
-            <input type="radio" name="question_3" value="answer_1">Holiday<br>
-            <input type="radio" name="question_3" value="answer_2">Birthday<br>
-            <input type="radio" name="question_3" value="answer_3">Other<br>
-            <input type="radio" name="question_3" value="answer_4">No ocassion<br>
+            <input type="radio" name="question_3" value="answer_1" id="q3-r1">Holiday<br>
+            <input type="radio" name="question_3" value="answer_2" id="q3-r2">Birthday<br>
+            <input type="radio" name="question_3" value="answer_3" id="q3-r3">Other<br>
+            <input type="radio" name="question_3" value="answer_4" id="q3-r4">No ocassion<br>
         </p>
 
         <p>List any hobbies the gift recipient has:<br>
@@ -31,16 +31,16 @@
         </p>
 
         <p>How would you prefer the gift results to be sorted?<br>
-            <input type="radio" name="question_6" value="answer_1">By Price<br>
-            <input type="radio" name="question_6" value="answer_2">By Rating<br>
-            <input type="radio" name="question_6" value="answer_3">By Relevance<br>
+            <input type="radio" name="question_6" value="answer_1" id="q5-r1">By Price<br>
+            <input type="radio" name="question_6" value="answer_2" id="q5-r2">By Rating<br>
+            <input type="radio" name="question_6" value="answer_3" id="q5-r3">By Relevance<br>
         </p>
 
         <br>
         <br>
         <br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" id="submit-button" onclick="formSubmit(event)" value="Submit">
         <input type="reset" value="Clear">
     </form>
 </div>
