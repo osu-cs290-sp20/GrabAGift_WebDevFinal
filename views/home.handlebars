@@ -3,43 +3,44 @@
         document.getElementById("age-displayer").value=inputVal;
     }
 </script>
+<div class="form-container">
+    <form method="get">
+        Answer the following questions to determine what gifts are best for your occasion!
 
-<form method="get">
-Answer the following questions to determine what gifts are best for your occasion!
+        <p>What is the age of the gift recipient?<br>
+            <input type="range" min="1" max="100" step="1" onchange="updateDisplay(this.value);" id="age-slider"><br>
+            <input type="text" id="age-displayer"><br>
+        </p>
 
-    <p>What is the age of the gift recipient?<br>
-        <input type="range" min="1" max="100" step="1" onchange="updateDisplay(this.value);" id="age-slider"><br>
-        <input type="text" id="age-displayer"><br>
-    </p>
+        <p>What is the gender of the gift recipient?<br>
+            <input type="radio" name="question_2" value="answer_1">Male<br>
+            <input type="radio" name="question_2" value="answer_2">Female<br>
+            <input type="radio" name="question_2" value="answer_3">Non-binary<br>
+            <input type="radio" name="question_2" value="answer_4">Prefer not to answer<br>
+        </p>
 
-    <p>What is the gender of the gift recipient?<br>
-        <input type="radio" name="question_2" value="answer_1">Male<br>
-        <input type="radio" name="question_2" value="answer_2">Female<br>
-        <input type="radio" name="question_2" value="answer_3">Non-binary<br>
-        <input type="radio" name="question_2" value="answer_4">Prefer not to answer<br>
-    </p>
+        <p>What ocassion is the gift for?<br>
+            <input type="radio" name="question_3" value="answer_1">Holiday<br>
+            <input type="radio" name="question_3" value="answer_2">Birthday<br>
+            <input type="radio" name="question_3" value="answer_3">Other<br>
+            <input type="radio" name="question_3" value="answer_4">No ocassion<br>
+        </p>
 
-    <p>What ocassion is the gift for?<br>
-        <input type="radio" name="question_3" value="answer_1">Holiday<br>
-        <input type="radio" name="question_3" value="answer_2">Birthday<br>
-        <input type="radio" name="question_3" value="answer_3">Other<br>
-        <input type="radio" name="question_3" value="answer_4">No ocassion<br>
-    </p>
+        <p>List any hobbies the gift recipient has:<br>
+            <input type="text" name="question_4" id="hobbies-input"><br>
+        </p>
 
-    <p>List any hobbies the gift recipient has:<br>
-        <input type="text" name="question_4" id="hobbies-input"><br>
-    </p>
+        <p>How would you prefer the gift results to be sorted?<br>
+            <input type="radio" name="question_6" value="answer_1">By Price<br>
+            <input type="radio" name="question_6" value="answer_2">By Rating<br>
+            <input type="radio" name="question_6" value="answer_3">By Relevance<br>
+        </p>
 
-    <p>How would you prefer the gift results to be sorted?<br>
-        <input type="radio" name="question_6" value="answer_1">By Price<br>
-        <input type="radio" name="question_6" value="answer_2">By Rating<br>
-        <input type="radio" name="question_6" value="answer_3">By Relevance<br>
-    </p>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Clear">
-</form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</div>
