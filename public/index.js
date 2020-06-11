@@ -1,7 +1,7 @@
 function formSubmit(event) {
     event.preventDefault();
 
-    const searchTerms = [];
+    let searchTerms = [];
 
     const ageSlider = document.getElementById('age-slider');
 
