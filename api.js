@@ -22,7 +22,10 @@ class Api {
 
     if (!response[0].searchResult[0].item) return []
 
-    return response[0].searchResult[0].item.map(normalizeResponse)
+    return response[0].searchResult[0].item.map(normalizeResponse).map(i => {
+      i.price = parseFloat(i.sellingStatus.currentPrice[0].__value__).toFixed(2);
+      return i
+    })
   }
 }
 
