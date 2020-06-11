@@ -1,21 +1,23 @@
 <article class="gift">
-        <div class="gift-content">
-          <img class = "gift-picture" src = "{{giftURL}}"/>
+  <div class="gift-content">
+    <div class="gift-items">
+      <p class="gift-description">
+        {{title}}
+      </p>
 
-          <p class="gift-description">
-            {{description}}
-          </p>
+      <p class="gift-price">
+        ${{price}}
+      </p>
 
-          <p class="gift-price">
-            {{price}}
-          </p>
-          
-          <p class="gift-rating">
-            {{rating}}
-          </p>
+      <p class="gift-rating">
+        {{rating}}
+      </p>
 
-          <p class="tags">
-            {{tags}}
-          </p>
-        </div>
-      </article>
+      <p class="tags">
+        {{tags}}
+      </p>
+    </div>
+
+    <img class="gift-picture" src="{{image}}" />
+  </div>
+</article>

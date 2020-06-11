@@ -49,14 +49,30 @@ html,body {
   flex-wrap: wrap;
 }
 
-.item {
-  flex: 0 1 28%;
-  display: flex;
+.gift {
+  width: 310px;
   margin: 10px;
   padding: 20px;
   border: 1px solid #dadada;
   border-radius: 2px;
   background-color: #fff;
+}
+
+.gift .gift-content {
+  flex: 0 1 28%;
+  display: flex;
+  align-items: center;
+}
+
+.gift .gift-content .gift-items {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.gift .gift-content .gift-picture {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .form-container {
