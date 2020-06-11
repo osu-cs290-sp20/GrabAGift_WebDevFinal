@@ -20,6 +20,8 @@ class Api {
       keywords,
     })
 
+    if (!response[0].searchResult[0].item) return []
+
     return response[0].searchResult[0].item.map(normalizeResponse)
   }
 }

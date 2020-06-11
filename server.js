@@ -16,10 +16,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('aboutUs');
-  });
+  res.render('aboutUs');
+});
 
-app.get('/:keyword', async (req, res) => {
+app.get('/gifts/:keyword', async (req, res) => {
   const response = await Api.getByKeywords(req.params.keyword)
   const items = response.map(i => ({
     ...i,

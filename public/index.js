@@ -1,38 +1,28 @@
 function formSubmit(event) {
     event.preventDefault();
-    var searchTerms ="";
 
-    var ageSlider = document.getElementById("age-slider");
-    
-    var maleGenderSelect = document.getElementById("q2-r1");
-    var femaleGenderSelect = document.getElementById("q2-r2");
+    const searchTerms = [];
 
-    var hobbiesInput = document.getElementById("hobbies-input");
-    
-    if(ageSlider.value <= 12) {
-        if(searchTerms.length == 0) {
-            searchTerms = searchTerms.concat('for+kids');
-        }else {
-            searchTerms = searchTerms.concat('+for+kids');
+    const ageSlider = document.getElementById('age-slider');
+
+    const maleGenderSelect = document.getElementById('q2-r1');
+    const femaleGenderSelect = document.getElementById('q2-r2');
+
+    const hobbiesInput = document.getElementById('hobbies-input');
+
+    const hobbies = hobbiesInput.value.split(/[ ,]/).filter(Boolean);
+    searchTerms = searchTerms.concat(hobbies);
+
+    if (ageSlider.value <= 12) {
+        searchTerms.push('for+kids');
+    } else {
+        if (maleGenderSelect.checked) {
+            searchTerms.push('mens');
+        } else if (femaleGenderSelect.checked) {
+            searchTerms.push('womens');
         }
     }
 
-    if(maleGenderSelect.checked == true) {
-        if(searchTerms.length == 0) {
-            searchTerms = searchTerms.concat("mens");
-        }else {
-            searchTerms = searchTerms.concat("+mens");
-        }
-    }else if(femaleGenderSelect.checked == true) {
-        if(searchTerms.length == 0) {
-            searchTerms= searchTerms.concat("womens");
-        }else {
-            searchTerms = searchTerms.concat("+womens");
-        }
-    }
-
-    searchTerms = searchTerms.concat("+", hobbiesInput.value);
-
-    console.log("Keywords pulled from survey: ", searchTerms);
-    window.location= "/" + searchTerms;
+    console.log('Keywords pulled from survey: ', searchTerms);
+    window.location= `/gifts/${searchTerms.join('+')}`;
 }
