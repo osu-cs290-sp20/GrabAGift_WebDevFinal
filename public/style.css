@@ -1,7 +1,13 @@
+html,body {
+  margin: 0;
+}
+
 .navbar {
   background-color: #f8f9fa;
   padding: 4px;
-  padding-right: 1px
+  padding-right: 1px;
+  display: flex;
+  align-items: center;
 }
 .dropbtn {
   background-image: url('img/hamburger_menu.png');
