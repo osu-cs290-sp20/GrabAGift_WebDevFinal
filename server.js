@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+app.get('/about', (req, res) => {
+    res.render('aboutUs');
+  });
+
 app.get('/:keyword', async (req, res) => {
   const response = await Api.getByKeywords(req.params.keyword)
   const items = response.map(i => ({
