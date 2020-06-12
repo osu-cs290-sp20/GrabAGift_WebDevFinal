@@ -4,3 +4,5 @@ Added initial files for HTML, CSS, Javascript, and Server Side Javascript - Nera
 
 
 Restructured for addition of dependencies and handlebars using npm - Neranjan, 5/31
+
+Added a new branch for server - Neranjan, 6/6
