@@ -9,8 +9,6 @@
 </script>
 <div class="form-container">
     <form method="get">
-        Answer the following questions to determine what gifts are best for your occasion!
-
         <p>What is the age of the gift recipient?<br>
             <input type="range" id="age-slider" min="1" max="100" step="1" value="24" oninput="updateDisplay(this.value);" /><br>
             <input type="number" id="age-displayer" value="24" oninput="updateSlider(this.value);" /><br>
@@ -39,12 +37,7 @@
             <input type="radio" name="question_6" value="answer_2" id="q5-r2">By Rating<br>
             <input type="radio" name="question_6" value="answer_3" id="q5-r3">By Relevance<br>
         </p>
-
-        <br>
-        <br>
-        <br>
-        <br>
         <input type="submit" id="submit-button" onclick="formSubmit(event)" value="Submit">
-        <input type="reset" value="Clear">
+        <input type="reset" id="clear-button" value="Clear">
     </form>
 </div>
